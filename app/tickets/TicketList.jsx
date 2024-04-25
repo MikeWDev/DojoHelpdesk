@@ -17,7 +17,7 @@ const TicketList = async () => {
     <>
       {tickets.map((ticket) => {
         return (
-          <Link href={`tickets/${ticket.id}`}>
+          <Link key={ticket.id} href={`tickets/${ticket.id}`}>
             <div className="card my-5" key={ticket.id}>
               <h3>{ticket.title}</h3>
               <p>{ticket.body.slice(0, 200)}...</p>
