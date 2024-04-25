@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { resolve } from "styled-jsx/css";
 
 async function getTickets() {
   const res = await fetch("http://localhost:2137/tickets", {
